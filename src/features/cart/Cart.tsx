@@ -19,7 +19,7 @@ export function Cart() {
         </thead>
         <tbody>
           {Object.entries(items).map(([id, quantity]) => (
-            <tr>
+            <tr key={id}>
               <td>{products[id].name}</td>
               <td>
                 <input
